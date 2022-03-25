@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: Raleway-Regular;
+    src: url("Raleway/Raleway-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url("Raleway/Raleway-SemiBold.ttf") format('truetype');
+}
+
+body {
+    margin: 0;
+    background-color: #120731;
+}
+
+h1 {
+    font-family: Raleway-SemiBold, sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.banner {
+    display: flex;
+    background: url("TP1/fondo_abel.png") no-repeat bottom;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.post-banner {
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
+}
