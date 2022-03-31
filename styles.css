@@ -24,7 +24,7 @@ html, body {
 
 h1 {
     font-family: Raleway-Black, sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: white;
     margin: 0;
 }
@@ -48,8 +48,17 @@ a {
     font-family: Raleway-Regular, sans-serif;
     color: white;
     font-size: 30px;
-    margin: 40px 0;
     text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+header img {
+    width: 200px;
 }
 
 .center {
@@ -57,6 +66,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .container {
@@ -110,7 +120,7 @@ a {
     font-size: 120px;
 }
 
-.localidad {
+.box-violeta {
     background-color: #530DFF;
     padding: 15px 60px;
 }
@@ -153,27 +163,44 @@ input[type="button"], input[type="submit"] {
 
 .ingresodatos {
     width: 80%;
-    margin: 80px auto;
+    margin: 60px auto;
     display: flex;
     flex-direction: column;
 }
 form {
     font-family: Raleway-Regular, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form img {
+    max-width: 600px;
 }
 
 .spacebetween {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    align-items: center;
 }
 
 input[type="text"], input[type="email"], select {
     width: 50%;
     font-family: Raleway-Regular, sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     text-align: left;
+}
+
+#form-h1 {
+    margin: 0;
+}
+
+#form-h2 {
+    font-size: 25px;
 }
 
 @media(max-width: 1400px) {
@@ -192,6 +219,10 @@ input[type="text"], input[type="email"], select {
 
     h3 {
         font-size: 25px;
+    }
+
+    .center {
+        margin-bottom: 0;
     }
 
     .banner {
@@ -228,7 +259,7 @@ input[type="text"], input[type="email"], select {
 
     input[type="button"], input[type="submit"] {
         padding: 10px 20px;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .img-frente {
@@ -241,7 +272,21 @@ input[type="text"], input[type="email"], select {
     }
 
     form {
-        font-size: 25px;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    form img {
+        max-width: 250px;
+        order: 1;
+    }
+
+    #form-h1 {
+        font-size: 30px;
+    }
+
+    #form-h2 {
+        font-size: 20px;
     }
 
     .ingresodatos {
@@ -255,6 +300,7 @@ input[type="text"], input[type="email"], select {
 
     input[type="text"], input[type="email"], select {
         width: 100%;
+        font-size: 20px;
     }
 
     a {
