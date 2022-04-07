@@ -46,15 +46,16 @@ h3 {
 
 a {
     font-family: Raleway-Regular, sans-serif;
+    font-size: 25px;
     color: white;
-    font-size: 30px;
     text-decoration: none;
 }
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 40px;
+    align-items: center;
 }
 
 header img {
@@ -67,6 +68,23 @@ header img {
     align-items: center;
     text-align: center;
     margin-bottom: 25px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column h1, .column a {
+    margin-top: 25px;
+}
+
+.column img {
+    position: absolute;
+    bottom: 0;
 }
 
 .container {
@@ -169,12 +187,8 @@ input[type="button"], input[type="submit"] {
 }
 form {
     font-family: Raleway-Regular, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
 form img {
@@ -220,6 +234,10 @@ input[type="text"], input[type="email"], select {
 
     h3 {
         font-size: 25px;
+    }
+
+    #firmaAbel {
+        display: none;
     }
 
     .center {
@@ -307,6 +325,14 @@ input[type="text"], input[type="email"], select {
     a {
         font-size: 20px;
         margin: 20px 0;
+    }
+
+    .column h1, .column a {
+        margin-top: 10px;
+    }
+
+    .column img {
+        max-height: 40vh;
     }
 }
 
